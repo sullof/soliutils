@@ -1,7 +1,7 @@
 {
   "name": "soliutils",
   "version": "0.0.3",
-  "description": "Contracts that I reuse often",
+  "description": "Basic contracts that I reuse often",
   "publishConfig": {
     "access": "public"
   },
@@ -14,7 +14,18 @@
     "lint": "prettier --write 'contracts/**/*.sol' && solhint 'contracts/**/*.sol'",
     "format": "npx prettier --write 'test/**/*.js'"
   },
-  "author": "Francesco Sullo <francesco@sullo.co>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sullof/soliutils.git"
+  },
+  "author": {
+    "name": "Francesco Sullo",
+    "email": "francesco@sullo.co"
+  },
+  "bugs": {
+    "url": "https://github.com/sullof/soliutils/issues"
+  },
+  "homepage": "https://github.com/sullof/soliutils#readme",
   "license": "MIT",
   "dependencies": {
     "@openzeppelin/contracts": "^4.0.0",
