@@ -9,19 +9,26 @@ Install with
 npm i -D soliutils @openzeppelin/contracts-upgradeable
 
 ```
-and use as
+and use as usual. For example, the UUPSUgradeable template:
 ```solidity
 import "@secrez/soliutils/contracts/UUPSUpgradeableTemplate.sol";
 
-contract YourNFT is UUPSUpgradeableTemplate {
+contract YourUpgradeableContract is UUPSUpgradeableTemplate {
+
+  function initialize() public initializer {
+    __UUPSUpgradableTemplate_init();
+  }
+
+  function _authorizeUpgrade(address newImplementation) internal virtual override onlyOwner {}
+  
 ...
 ```
 
 ## History
 
-**0.0.1**
+**0.0.3**
 
-- Just set adding `ERC721Receiver.sol` and `UUPSUpgradeableTemplate.sol`
+- Just set adding `ERC721Receiver.sol` and `UUPSUpgradeableTemplate.sol` and fixed some minor issue
 
 ## License
 
