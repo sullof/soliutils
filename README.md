@@ -6,7 +6,7 @@ A collection of basic contracts that I reuse all the time
 
 Install with
 ```
-npm install soliutils @openzeppelin/contracts-upgradeable
+npm i -D soliutils @openzeppelin/contracts-upgradeable
 
 ```
 and use as
