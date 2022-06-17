@@ -6,11 +6,12 @@ A collection of basic contracts that I reuse all the time
 
 Install with
 ```
-npm install @secrez/strumenti-solidi
+npm install soliutils @openzeppelin/contracts-upgradeable
+
 ```
 and use as
 ```solidity
-import "@secrez/strumenti-solidi/contracts/UUPSUpgradeableTemplate.sol";
+import "@secrez/soliutils/contracts/UUPSUpgradeableTemplate.sol";
 
 contract YourNFT is UUPSUpgradeableTemplate {
 ...
