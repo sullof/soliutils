@@ -9,6 +9,8 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 abstract contract UUPSUpgradableTemplate is Initializable, OwnableUpgradeable, UUPSUpgradeable {
 
+  event ImplementationUpgraded(address newImplementation);
+
   // solhint-disable-next-line
   function __UUPSUpgradableTemplate_init() internal initializer {
     __Ownable_init();
