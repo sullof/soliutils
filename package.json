@@ -1,6 +1,6 @@
 {
   "name": "soliutils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Basic contracts that I reuse often",
   "publishConfig": {
     "access": "public"
