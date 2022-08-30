@@ -26,6 +26,10 @@ contract YourUpgradeableContract is UUPSUpgradeableTemplate {
 
 ## History
 
+**0.0.6**
+
+- Emit `emit ImplementationUpgraded(newImplementation);` in `_authorizeUpgrade`
+
 **0.0.3**
 
 - Just set adding `ERC721Receiver.sol` and `UUPSUpgradeableTemplate.sol` and fixed some minor issue
