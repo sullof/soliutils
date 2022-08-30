@@ -17,4 +17,8 @@ abstract contract UUPSUpgradableTemplate is Initializable, OwnableUpgradeable, U
     __UUPSUpgradeable_init();
   }
 
+  function _authorizeUpgrade(address newImplementation) internal virtual override onlyOwner {
+    emit ImplementationUpgraded(newImplementation);
+  }
+
 }
