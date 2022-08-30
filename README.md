@@ -11,15 +11,13 @@ npm i -D soliutils @openzeppelin/contracts-upgradeable
 ```
 and use as usual. For example, the UUPSUgradeable template:
 ```solidity
-import "@secrez/soliutils/contracts/UUPSUpgradeableTemplate.sol";
+import "soliutils/contracts/UUPSUpgradeableTemplate.sol";
 
 contract YourUpgradeableContract is UUPSUpgradeableTemplate {
 
   function initialize() public initializer {
     __UUPSUpgradableTemplate_init();
   }
-
-  function _authorizeUpgrade(address newImplementation) internal virtual override onlyOwner {}
   
 ...
 ```
